@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: victor-clipper-ai
+    runtime: docker
+    plan: free
+    envVars:
+      - key: WHISPER_MODEL
+        value: tiny
+    healthCheckPath: /health
